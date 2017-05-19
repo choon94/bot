@@ -592,6 +592,7 @@ function sendTransaction(recipientId) {
       id: recipientId
     },
     message: {
+      is_echo:true,
       text: messageText,
       metadata: "TRANS_WORD"
     }
@@ -607,7 +608,6 @@ function sendTransactionWord(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      is_echo:true,
       text: messageText,
       metadata: "TRANS_WORD"
     }
