@@ -592,9 +592,10 @@ function sendTransaction(recipientId) {
       id: recipientId
     },
     message: {
-      is_echo:true,
       text: messageText,
-      metadata: "TRANS_WORD"
+      quick_reply: {
+        payload: "TRANS_WORD"
+      }
     }
   };
 
