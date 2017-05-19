@@ -594,6 +594,7 @@ function sendTransaction(recipientId) {
     message: {
       text: messageText,
       quick_reply: {
+        content_type:"text",
         payload: "TRANS_WORD"
       }
     }
